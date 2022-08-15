@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <div style="font-size: 70px;"  class="content">
+          <p>KISS</p>
+          <!-- <img style="width: 700px ;" src="./assets/images/slide-1-2.png" alt=""> -->
+        </div>
+        </section>
+        <section>
+          <section style="font-weight: 600; font-size: 50px;" >What is it KISS ?</section>
+          <section data-markdown>
+            <textarea data-template>
+              KISS is a design principle which states that designs and/or systems should be as simple as possible
+
+              KISS stands for ...
+              * K - keep
+              * I - it
+              * S - simple,
+              * S - stupid
+              ---
+              or
+              * K - keep
+              * I - it
+              * S - short and
+              * S - simple
+            </textarea>
+          </section>
+          <section>
+            <div class="content">
+              <p style="font-weight: 600; font-size: 60px;">Kelly Johnson - The Author</p>
+              <div style=" margin-left: 70px; display: flex; width: 800px; justify-content: space-between;" class="wrapper">
+                <div style="width: 200px; height: 270px;"><img style="width: 200px; height: 270px;" src="./assets/images/slide-2-second-author.jpg" alt=""></div>
+                <p style="width: 500px; font-size: 25px;">The term was first used in the US Navy and is thought to have been coined by Kelly Johnson, who was the lead engineer at the Lockheed Skunk Works. Johnson told the designers at Lockheed that if their products weren’t simple and easy to understand, they would not only cost lives but also quickly become obsolete in combat conditions and thus worthless.</p>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section >
+            <p style="font-size: 50px;">How we will benefit from KISS ?</p>
+            <ul>
+              <li class="fragment">more flexible code</li>
+              <li class="fragment">easier to extend, modify or refactor</li>
+              <li class="fragment">other devevlopers can easily understand this code</li>
+            </ul>
+        </section>
+        <section>
+          <p>How we can apply the KISS principle to coding ? 
+            <br>(some tips)</p>
+            <ul>
+              <li class="fragment">Keep your methods small (30-40 lines per method).</li>
+              <li class="fragment">Ensure your classes has a single responsibility</li>
+              <li class="fragment">Delete instances, methods or redundant processes within the code base (that are not in use)</li>
+            </ul>
+            <p class="fragment">You should try to reduce the complexity while maintaining an efficient system.</p>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+            some useful links
+            * [KISS in programming](https://dev.to/kwereutosu/the-k-i-s-s-principle-in-programming-1jfg)
+            * [using KISS principe in practice(JS)](https://medium.com/infancyit/kiss-keep-it-simple-smart-javascript-habits-b019ce14b5ec)
+          </textarea>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+      });
+    </script>
+  </body>
+</html>
